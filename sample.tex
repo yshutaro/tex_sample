@@ -6,6 +6,7 @@
 \usepackage{bm}
 % 画像
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{enumerate}
 
 \newtheorem{dfn}{定義}
 \newtheorem{thm}{定理}
@@ -27,14 +28,35 @@
 \subsubsection{subsubsection}
 \paragraph{paragraph}
 
-
 \begin{dfn}
 定義
+$ \underset{\text{def}}\Leftrightarrow $
 \end{dfn}
 \begin{thm}
 定理
 \end{thm}
 
 
+$ \rightarrow $ \(\)
+$ \Rightarrow $ \(\)
+$\dot{a}$ \(\)
+$\dotsb$ \(\)
+$\dots$ \(\)
+
+\begin{enumerate}[M1]
+  \item item1
+  \item item2
+  \item item3
+\end{enumerate}
+
+\begin{math}
+  J_{\varphi_\alpha(p)}(\varphi_\beta \circ \varphi_\alpha^{-1}) = \left[
+    \begin{array}{rrr}
+      \frac{\partial \xi_\beta^1}{\partial \xi_\alpha^1}(\varphi_\alpha(p)) & \dots & \frac{\partial \xi_\beta^1}{\partial \xi_\alpha^n}(\varphi_\alpha(p))  \\
+      \vdots & \ddots & \vdots \\
+      \frac{\partial \xi_\beta^n}{\partial \xi_\alpha^1}(\varphi_\alpha(p)) & \dots & \frac{\partial \xi_\beta^n}{\partial \xi_\alpha^n}(\varphi_\alpha(p))  \\
+    \end{array}
+  \right]
+\end{math}
 
 \end{document}
